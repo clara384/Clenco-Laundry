@@ -1,0 +1,95 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #2d3e50;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2d3e50;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #1f2a36;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f1f1;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+td button {
+  background-color: #f44336;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+td button:hover {
+  background-color: #e53935;
+}

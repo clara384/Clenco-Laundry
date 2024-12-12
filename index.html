@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Akuntansi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Aplikasi Akuntansi</h1>
+      </header>
+
+      <div class="nav">
+        <ul>
+          <li><a href="#" onclick="showPage('jurnal-umum')">Jurnal Umum</a></li>
+          <li>
+            <a href="#" onclick="showPage('jurnal-penyesuaian')"
+              >Jurnal Penyesuaian</a
+            >
+          </li>
+          <li><a href="#" onclick="showPage('buku-besar')">Buku Besar</a></li>
+          <li>
+            <a href="#" onclick="showPage('neraca-saldo')">Neraca Saldo</a>
+          </li>
+          <li>
+            <a href="#" onclick="showPage('laporan-laba-rugi')"
+              >Laporan Laba Rugi</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Jurnal Umum -->
+      <div class="page" id="jurnal-umum">
+        <h2>Jurnal Umum</h2>
+        <button onclick="showAddForm('jurnal-umum')">Tambah Jurnal</button>
+        <table id="tabel-jurnal-umum">
+          <thead>
+            <tr>
+              <th>Tanggal</th>
+              <th>Akun</th>
+              <th>Debit</th>
+              <th>Kredit</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data Jurnal Umum akan ditambahkan di sini -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Jurnal Penyesuaian -->
+      <div class="page" id="jurnal-penyesuaian">
+        <h2>Jurnal Penyesuaian</h2>
+        <button onclick="showAddForm('jurnal-penyesuaian')">
+          Tambah Jurnal
+        </button>
+        <table id="tabel-jurnal-penyesuaian">
+          <thead>
+            <tr>
+              <th>Tanggal</th>
+              <th>Akun</th>
+              <th>Debit</th>
+              <th>Kredit</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data Jurnal Penyesuaian akan ditambahkan di sini -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Buku Besar -->
+      <div class="page" id="buku-besar">
+        <h2>Buku Besar</h2>
+        <table id="tabel-buku-besar">
+          <thead>
+            <tr>
+              <th>Akun</th>
+              <th>Debit</th>
+              <th>Kredit</th>
+              <th>Saldo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data Buku Besar akan ditambahkan di sini -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Neraca Saldo -->
+      <div class="page" id="neraca-saldo">
+        <h2>Neraca Saldo</h2>
+        <table id="tabel-neraca-saldo">
+          <thead>
+            <tr>
+              <th>Akun</th>
+              <th>Debit</th>
+              <th>Kredit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data Neraca Saldo akan ditambahkan di sini -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Laporan Laba Rugi -->
+      <div class="page" id="laporan-laba-rugi">
+        <h2>Laporan Laba Rugi</h2>
+        <table id="tabel-laba-rugi">
+          <thead>
+            <tr>
+              <th>Akun</th>
+              <th>Jumlah</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data Laporan Laba Rugi akan ditambahkan di sini -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
